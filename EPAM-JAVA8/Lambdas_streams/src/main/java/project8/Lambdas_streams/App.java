@@ -5,17 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
 	public static final Scanner in=new Scanner(System.in);
     public static void main( String[] args )
     {
     	 ArrayList<Integer>arrayOfNumbers = new ArrayList<Integer>();
-    	 System.out.println("enter the number of Elements to find average using Streams:-\n");
+    	 System.out.println("enter the # Elements to find average using Streams:-\n");
     	 int n=in.nextInt();
         System.out.println("enter the elements to find the average(or press ctrl+z):-\n");
         for(int i=0;i<n;i++) {
@@ -23,6 +19,10 @@ public class App
         }
         //finding average...
        
+/**
+ * Hello world!
+ *
+ */
         AverageClass avg=new AverageClass(arrayOfNumbers);
         avg.average();
         
